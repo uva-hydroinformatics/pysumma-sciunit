@@ -9,7 +9,7 @@ MyAnalsis notebook that is used to repeat the analysis using sciunit command too
 
 ## SUMMA Model Installation 
 
-The SUMMA model  is installed from the SUMMA [Installation documentation] (https://summa.readthedocs.io/en/latest/installation/SUMMA_installation/). 
+The SUMMA model  is installed from the SUMMA [Installation documentation](https://summa.readthedocs.io/en/latest/installation/SUMMA_installation/). 
 
 
 ## Steps required to replicate the sciunit pacakage from CUAHSI HydroShare JupyterHub
