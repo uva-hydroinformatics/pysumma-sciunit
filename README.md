@@ -9,7 +9,7 @@ MyAnalsis notebook that is used to repeat the analysis using sciunit command too
 
 ## SUMMA Model Installation 
 
-The SUMMA model  is installed from the following link for the the SUMMA Installation documentation (https://summa.readthedocs.io/en/latest/installation/SUMMA_installation/). 
+The SUMMA model  is installed from the SUMMA [Installation documentation] (https://summa.readthedocs.io/en/latest/installation/SUMMA_installation/). 
 
 
 ## Steps required to replicate the sciunit pacakage from CUAHSI HydroShare JupyterHub
@@ -53,3 +53,6 @@ cd sciunit/MyAnalysis/cde-package/cde-root/home/ubuntu/pysumma
 !sciunit given ../../f4a84771e68c4abd90c135ce4f72cfbd/f4a84771e68c4abd90c135ce4f72cfbd/data/contents repeat e2
 ```
 
+## License
+
+[MIT License](https://github.com/uva-hydroinformatics/pysumma-sciunit/blob/master/LICENSE)
