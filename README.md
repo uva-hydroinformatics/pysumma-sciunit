@@ -38,7 +38,7 @@ The sciunit repeat e1 command will rerun the experiment 1 (e1) analysis on the h
 !sciunit repeat e1
 ```
 8. Navigate to the newly created MyAnalysis directory
-`"
+```
 cd 
 cd sciunit
 cd sciunit/MyAnalysis/cde-package/cde-root/home/ubuntu/pysumma
