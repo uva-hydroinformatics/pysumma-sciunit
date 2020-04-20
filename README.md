@@ -34,7 +34,7 @@ The sciunit show command will show the latest packaged experiment within the "My
 ```
 7. Repeat the Analysis
 The sciunit repeat e1 command will rerun the experiment 1 (e1) analysis on the host machine. This command will create a new directory that includes software, data, and environment settings
-`"
+```
 !sciunit repeat e1
 ```
 8. Navigate to the newly created MyAnalysis directory
