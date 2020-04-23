@@ -28,14 +28,14 @@ The user must issue sciunit commands by using the "!" expression in Jupyter.
 !sciunit open MyAnalysis
 ````
 6. List all sciunit packages within this resources.
-
-The sciunit list command will list all the packaged experiments within the "MyAnalysis" sciunit package
+    
+    The sciunit list command will list all the packaged experiments within the "MyAnalysis" sciunit package
 ```
 !sciunit list
 ```
 7. Repeat the Analysis.
-
-The sciunit repeat e1 command will rerun the experiment 1 (e1) analysis on the host machine. This command will create a new directory that includes software, data, and environment settings
+    
+    The sciunit repeat e1 command will rerun the experiment 1 (e1) analysis on the host machine. This command will create a new directory that includes software, data, and environment settings
 ```
 !sciunit repeat e1
 ```
