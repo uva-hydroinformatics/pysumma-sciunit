@@ -4,7 +4,7 @@
 
 This repository contains:
 
-The Python script for the SUMMA Python wrapper software pySUMMA (Choi et al., 2018) to model the sensitivity of evapotranspiration to the stomatal resistance parameterization for the Aspen stand at the Reynolds Mountain East study site.
+The Python script for the SUMMA Python wrapper software pySUMMA (Choi et al., 2018) to model the sensitivity of total evapotranspiration to the stomatal resistance parameterization for the Aspen stand at the Reynolds Mountain East study site.
 
 MyAnalsis notebook is used to repeat the analysis using sciunit command tool through JupyterHub on [HydroShare](https://www.hydroshare.org/resource/7d1403636fd3444c87e3c5b40b000b91/).
 
@@ -13,7 +13,7 @@ MyAnalsis notebook is used to repeat the analysis using sciunit command tool thr
 The SUMMA model is installed from the SUMMA [Installation documentation](https://summa.readthedocs.io/en/latest/installation/SUMMA_installation/). 
 
 
-## Steps required to replicate the sciunit package from CUAHSI HydroShare JupyterHub
+## Steps required to replicate the sciunit package from CUAHSI JupyterHub
 
 1. Login to HydroShare.
 2. Navigate to the HydroShare resource named [MyAnalysis](https://www.hydroshare.org/resource/7d1403636fd3444c87e3c5b40b000b91/).
@@ -27,26 +27,29 @@ The user must issue sciunit commands by using the "!" expression in Jupyter.
 ```
 !sciunit open MyAnalysis
 ````
-6. List all sciunit packages within this resources
-The sciunit list command will list all the packaged experiments within "MyAnalysis" sciunit.
+6. List all sciunit packages within this resources.
+
+The sciunit list command will list all the packaged experiments within the "MyAnalysis" sciunit package
 ```
 !sciunit list
 ```
-7. Repeat the Analysis
+7. Repeat the Analysis.
+
 The sciunit repeat e1 command will rerun the experiment 1 (e1) analysis on the host machine. This command will create a new directory that includes software, data, and environment settings
 ```
 !sciunit repeat e1
 ```
-8. Navigate to the reproduced output in sciunit package 
+8. Navigate to the reproduced output in the sciunit package 
 ```
 !ls "/home/jovyan/work/sciunit/MyAnalysis/cde-package/cde-root/media/sf_pysumma/sciunit/"
 ```
-9. Change SUMMA configuration from Ball-berry to Jarvis method to analyze the impact of ET 
-10. Commit Sciunit to replicate sciunit packages using different dataset
+9. Change SUMMA configurations from Ball-berry to Jarvis method to analyze the impact of total ET. 
+
+10. Commit sciunit to replicate the sciunit package using different dataset
 ```
 !sciunit commit
 ```
-10. Repeat the newly created sciunit package using a different dataset
+11. Repeat the newly created the sciunit package using a different dataset
 ```
 !sciunit repeat e2
 ```
