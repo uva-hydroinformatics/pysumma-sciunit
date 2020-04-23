@@ -1,3 +1,4 @@
+
 # pysumma-sciunit
 
 
@@ -5,7 +6,7 @@ This repository contains:
 
 The Python script for the SUMMA Python wrapper software pySUMMA (Choi et al., 2018) to model the sensitivity of evapotranspiration to the stomatal resistance parameterization for the Aspen stand at the Reynolds Mountain East study site.
 
-MyAnalsis notebook is used to repeat the analysis using sciunit command tool through JupyterHub on [HydroShare](https://www.hydroshare.org/resource/5c4941b8ae474c4faf8a2a0872832fd1/).
+MyAnalsis notebook is used to repeat the analysis using sciunit command tool through JupyterHub on [HydroShare](https://www.hydroshare.org/resource/7d1403636fd3444c87e3c5b40b000b91/).
 
 ## SUMMA Model Installation 
 
@@ -21,15 +22,14 @@ The SUMMA model is installed from the SUMMA [Installation documentation](https:/
  
 The user must issue sciunit commands by using the "!" expression in Jupyter. 
 
-5. Open Sciunit
+5. Open sciunit
 
 ```
 !sciunit open MyAnalysis
 ````
-6. Show and list all sciunit packages within this resources
-The sciunit show command will show the latest packaged experiment within the "MyAnalysis" sciunit. While the sciunit list command will list all the packaged experiments within "MyAnalysis" sciunit.
+6. List all sciunit packages within this resources
+The sciunit list command will list all the packaged experiments within "MyAnalysis" sciunit.
 ```
-!sciunit show
 !sciunit list
 ```
 7. Repeat the Analysis
@@ -37,20 +37,18 @@ The sciunit repeat e1 command will rerun the experiment 1 (e1) analysis on the h
 ```
 !sciunit repeat e1
 ```
-8. Navigate to the newly created MyAnalysis directory
+8. Navigate to the reproduced output in sciunit package 
 ```
-cd 
-cd sciunit
-cd sciunit/MyAnalysis/cde-package/cde-root/home/ubuntu/pysumma
+!ls "/home/jovyan/work/sciunit/MyAnalysis/cde-package/cde-root/media/sf_pysumma/sciunit/"
 ```
-9. Commit changes to create a new package
+9. Change SUMMA configuration from Ball-berry to Jarvis method to analyze the impact of ET 
+10. Commit Sciunit to replicate sciunit packages using different dataset
 ```
 !sciunit commit
 ```
 10. Repeat the newly created sciunit package using a different dataset
-
 ```
-!sciunit given ../../f4a84771e68c4abd90c135ce4f72cfbd/f4a84771e68c4abd90c135ce4f72cfbd/data/contents repeat e2
+!sciunit repeat e2
 ```
 
 ## License
