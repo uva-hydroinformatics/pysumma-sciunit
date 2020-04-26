@@ -54,15 +54,21 @@ Note: The user must issue sciunit shell commands by using the "!" expression in 
 
 9. Change SUMMA configurations from Ball-berry to Jarvis method to analyze the impact of total ET. 
 
-  The prior step illustrated reproducing a past model run. To take a step further and replicate the study by changing the workflow and running the new analysis, it is possible to edit the Notebook within the MyAnlysis container to reconfigure the pySUMMA model run.
+   The prior step illustrated reproducing a past model run. To take a step further and replicate the study by changing the workflow and running the new analysis, it is possible to edit the Notebook within the MyAnlysis container to reconfigure the pySUMMA model run.
 
 ```
-
+with open(simulation_object, "r") as f:
+    read_data = f.read()
+    line = read_data.replace('BallBerry', "Jarvis")
+    f.close()
+with open(simulation_object, "w") as f:
+    f.write(line)
+    f.close()
 ```
 
 10. Commit sciunit to replicate the sciunit container.
 
-   Once the change has been made to the Notebook file, it can be committed to the sciunit container as a new experiment. 
+    Once the change has been made to the Notebook file, it can be committed to the sciunit container as a new experiment. 
    
 ```
 !sciunit commit
