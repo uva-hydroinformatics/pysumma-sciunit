@@ -76,7 +76,7 @@ with open(simulation_object, "w") as f:
 
 11. Repeat the newly created the sciunit experiment.
 
-  The prior command creates a new experiment in the Sciunit container (e2) that can be run using the repeat command, just as we did before for e1 in step 7.
+    The prior command creates a new experiment in the Sciunit container (e2) that can be run using the repeat command, just as we did before for e1 in step 7.
 
 ```
 !sciunit repeat e2
