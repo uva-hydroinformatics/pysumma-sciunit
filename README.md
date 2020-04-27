@@ -15,7 +15,7 @@ The purpose of this code is to illustrate how Sciunit can be used to containeriz
 
 The steps to replicate the modeling experiment described in the Essawy et al. manuscript on the CUAHSI JupyterHub are as follows. 
 
-Please note - In order to run Notebooks on CUAHSI JupyterHub, the user's account must be added to the [CUAHSI JupyterHub Group](https://www.hydroshare.org/group/156). This step is to prevent malicious use of the CUAHSI JupyterHub computational environment. 
+Please note - In order to run Notebooks on CUAHSI JupyterHub, the user's account must be added to the [CUAHSI JupyterHub Group](https://www.hydroshare.org/group/156). This step is to prevent malicious use of the CUAHSI JupyterHub computational environment. Once logged into your HydroShare account, you can request to be added to the group at the group HydroShare page.
 
 1. Login to HydroShare or create a new account.
 2. Navigate to the HydroShare resource named MyAnalysis either through the search feature or using this direct link [here](https://www.hydroshare.org/resource/7d1403636fd3444c87e3c5b40b000b91/).
