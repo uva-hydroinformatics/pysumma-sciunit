@@ -3,7 +3,7 @@
 
 This repository contains software described in the manuscript "A Taxonomy for Reproducible and Replicable Research in Environmental Modelling" by Essawy, Goodall, Voce, Morsy, Sadler, Choi, Tarboton, and Malik the is currently under peer review. 
 
-The MyAnalsis notebook is used to repeat a scientific analysis using the [Sciunit  tool](https://sciunit.run/) through JupyterHub on [HydroShare](https://www.hydroshare.org/). The MyAnalysis notebook is available on HydroShare [here](https://www.hydroshare.org/resource/7d1403636fd3444c87e3c5b40b000b91/).
+The MyAnalysis notebook is used to repeat a scientific analysis using the [Sciunit  tool](https://sciunit.run/) through JupyterHub on [HydroShare](https://www.hydroshare.org/). The MyAnalysis notebook is available on HydroShare [here](https://www.hydroshare.org/resource/7d1403636fd3444c87e3c5b40b000b91/).
 
 The scientific analysis uses the [pySUMMA library](https://github.com/UW-Hydro/pysumma) to model the sensitivity of total evapotranspiration to the stomatal resistance parameterization for the Aspen stand at the Reynolds Mountain East study site. More information about this experiment can be found in [Clark et al. (2015b)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2015WR017200).
 
