@@ -1,58 +1,28 @@
 
 # pysumma-sciunit
 
+This repository contains software described in the manuscript "A Taxonomy for Reproducible and Replicable Research in Environmental Modelling" by Essawy, Goodall, Voce, Morsy, Sadler, Choi, Tarboton, and Malik the is currently under peer review. 
 
-This repository contains:
+The MyAnalysis notebook is used to repeat a scientific analysis using the [Sciunit  tool](https://sciunit.run/) through JupyterHub on [HydroShare](https://www.hydroshare.org/). The MyAnalysis notebook is available on HydroShare [here](https://www.hydroshare.org/resource/7d1403636fd3444c87e3c5b40b000b91/).
 
-The Python script for the SUMMA Python wrapper software pySUMMA (Choi et al., 2018) to model the sensitivity of total evapotranspiration to the stomatal resistance parameterization for the Aspen stand at the Reynolds Mountain East study site.
+The scientific analysis uses the [pySUMMA library](https://github.com/UW-Hydro/pysumma) to model the sensitivity of total evapotranspiration to the stomatal resistance parameterization for the Aspen stand at the Reynolds Mountain East study site. More information about this experiment can be found in [Clark et al. (2015b)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2015WR017200).
 
-MyAnalsis notebook is used to repeat the analysis using sciunit command tool through JupyterHub on [HydroShare](https://www.hydroshare.org/resource/7d1403636fd3444c87e3c5b40b000b91/).
+pySUMMA wraps the hydrologic model [SUMMA](https://ral.ucar.edu/projects/summa), which is configured to allow for exploring different model configurations to easy test hyrodologic modeling hypotheses.
 
-## SUMMA Model Installation 
-
-The SUMMA model is installed from the SUMMA [Installation documentation](https://summa.readthedocs.io/en/latest/installation/SUMMA_installation/). 
-
+The purpose of this code is to illustrate how Sciunit can be used to containerize a pySUMMA modeling experiment so that it can be reporoduced and replicated by others. Scientific software is often difficult to package due to complex software dependencies and computational environments. By using Sciunit on the CUAHSI JupyterHub, this configuration is simplified for end users as described in the steps below.
 
 ## Steps required to replicate the sciunit package from CUAHSI JupyterHub
 
-1. Login to HydroShare.
-2. Navigate to the HydroShare resource named [MyAnalysis](https://www.hydroshare.org/resource/7d1403636fd3444c87e3c5b40b000b91/).
-3. Click the "Open with" button from the resource's landing page in HydroShare
-4. Select CUAHSI JupyterHub. An instance will be opened on JupyterHub under the user account, where the user can reproduce and replicate the workflow analysis saved as a sciunit package.  
- 
-The user must issue sciunit commands by using the "!" expression in Jupyter. 
+The steps to replicate the modeling experiment described in the Essawy et al. manuscript on the CUAHSI JupyterHub are as follows. 
 
-5. Open sciunit
+Please note - In order to run Notebooks on CUAHSI JupyterHub, the user's account must be added to the [CUAHSI JupyterHub Group](https://www.hydroshare.org/group/156). This step is to prevent malicious use of the CUAHSI JupyterHub computational environment. Once logged into your HydroShare account, you can request to be added to the group at the group HydroShare page.
 
-```
-!sciunit open MyAnalysis
-````
-6. List all sciunit packages within this resources.
+1. Login to HydroShare or create a new account.
+2. Navigate to the HydroShare resource named MyAnalysis either through the search feature or using this direct link [here](https://www.hydroshare.org/resource/7d1403636fd3444c87e3c5b40b000b91/).
+3. Click the "Open with..." button from the resource's landing page in HydroShare
+4. Select CUAHSI JupyterHub. An instance will be opened on JupyterHub under the user account, where the user can reproduce and replicate the workflow analysis saved as a sciunit package by executing the MyAnalysis.ipynb notebook.
 
-The sciunit list command will list all the packaged experiments within the "MyAnalysis" sciunit package
-```
-!sciunit list
-```
-7. Repeat the Analysis.
-
-The sciunit repeat e1 command will rerun the experiment 1 (e1) analysis on the host machine. This command will create a new directory that includes software, data, and environment settings
-```
-!sciunit repeat e1
-```
-8. Navigate to the reproduced output in the sciunit package 
-```
-!ls "/home/jovyan/work/sciunit/MyAnalysis/cde-package/cde-root/media/sf_pysumma/sciunit/"
-```
-9. Change SUMMA configurations from Ball-berry to Jarvis method to analyze the impact of total ET. 
-
-10. Commit sciunit to replicate the sciunit package using different dataset
-```
-!sciunit commit
-```
-11. Repeat the newly created the sciunit package using a different dataset
-```
-!sciunit repeat e2
-```
+Questions or problems executing these steps should be directed to Jon Goodall (goodall@virginia.edu). 
 
 ## License
 
