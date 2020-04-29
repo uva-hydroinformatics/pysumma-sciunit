@@ -20,9 +20,9 @@ Please note - In order to run Notebooks on CUAHSI JupyterHub, the user's account
 1. Login to HydroShare or create a new account.
 2. Navigate to the HydroShare resource named MyAnalysis either through the search feature or using this direct link [here](https://www.hydroshare.org/resource/7d1403636fd3444c87e3c5b40b000b91/).
 3. Click the "Open with..." button from the resource's landing page in HydroShare
-4. Select CUAHSI JupyterHub. An instance will be opened on JupyterHub under the user account, where the user can reproduce and replicate the workflow analysis saved as a sciunit package by executing the MyAnalsis_CUAHSI_JH.ipynb notebook.
+4. Select CUAHSI JupyterHub. An instance will be opened on JupyterHub under the user account, where the user can reproduce and replicate the workflow analysis saved as a sciunit package by executing the MyAnalsis.ipynb notebook.
 
-Those with access to the [CyberGIS for Water JupyterHub] (https://www.hydroshare.org/resource/4cfd280e8eb747169b293aec2862d4f5/) can use the additional MyAnalsis_CyberGIS.ipynb notebook provided to run a slightly modified version of the analysis (file paths are updated) within this second compute environment. 
+Those with access to the [CyberGIS for Water JupyterHub] (https://www.hydroshare.org/resource/4cfd280e8eb747169b293aec2862d4f5/) can also run the MyAnalsis.ipynb notebook in this compute environment after first updating file paths as described in the notebook. 
 
 Questions or problems executing these steps should be directed to Jon Goodall (goodall@virginia.edu). 
 
